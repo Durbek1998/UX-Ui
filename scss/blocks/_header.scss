@@ -1,1 +1,64 @@
 // Durbek aka css codes
+
+// .header-inner{
+//     display: flex;
+//     align-items: center;
+// }
+.header-inner{
+    padding-top: 32px;
+    
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__link1{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+.header__link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+.ham-btn{
+    background-color: #070707;
+    display: none;
+}
+.border{
+    width: 100%;
+    border: 1px solid #828282;
+    margin-top: 32px;
+}
+@media only screen and (max-width: 744px)  {
+    .header__link1{
+        font-size: 22px;
+        line-height: 25px;
+        color: #070707;
+    }    
+    .header__link {
+            font-size: 22px;
+            line-height: 25px;
+        }
+    .border{
+        width: 100%;
+        border: 1px solid #828282;
+        margin-top: 22px
+    }
+
+    }
+@media only screen and (max-width: 500px){
+    // .ham-btn{
+    //     display: block;
+    // }
+    .header__list-item{
+        display: none;
+    }
+    .border{
+        display: none;
+    }
+}   
+
