@@ -1,26 +1,33 @@
 /* inter-regular - latin */
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* inter-600 - latin */
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* inter-700 - latin */
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -49,4 +56,70 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.header-inner {
+  padding-top: 32px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__link1 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.ham-btn {
+  background-color: #070707;
+  display: none;
+}
+
+.border {
+  width: 100%;
+  border: 1px solid #828282;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 744px) {
+  .header__link1 {
+    font-size: 22px;
+    line-height: 25px;
+    color: #070707;
+  }
+  .header__link {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .border {
+    width: 100%;
+    border: 1px solid #828282;
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header__list-item {
+    display: none;
+  }
+  .border {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
